@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ash Slideshow feature.
+ */
+
+include_once 'ash_slideshow.features.inc';
