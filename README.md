@@ -6,11 +6,11 @@ Drupal Slideshow Feature (Drupal 7.x +)
 ### Ash Slideshow Module Dependencies
 
 * Entity API
-* Imag
+* Image
 * File
 * Field
-* Field SQL storag
-* Librarie
+* Field SQL storage
+* Libraries
 * Link
 * Linkit
 * Chaos tools
