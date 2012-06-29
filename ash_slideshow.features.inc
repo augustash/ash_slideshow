@@ -31,7 +31,7 @@ function ash_slideshow_views_api() {
 function ash_slideshow_image_default_styles() {
   $styles = array();
 
-  // Exported image style: slideshow_image
+  // Exported image style: slideshow_image.
   $styles['slideshow_image'] = array(
     'name' => 'slideshow_image',
     'effects' => array(

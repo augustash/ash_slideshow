@@ -10,7 +10,7 @@
 function ash_slideshow_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_slideshow-comment_body'
+  // Exported field: 'comment-comment_node_slideshow-comment_body'.
   $fields['comment-comment_node_slideshow-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function ash_slideshow_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -71,7 +72,7 @@ function ash_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-slideshow-field_slide_image'
+  // Exported field: 'node-slideshow-field_slide_image'.
   $fields['node-slideshow-field_slide_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -92,6 +93,7 @@ function ash_slideshow_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -150,7 +152,7 @@ function ash_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-slideshow-field_slide_link'
+  // Exported field: 'node-slideshow-field_slide_link'.
   $fields['node-slideshow-field_slide_link'] = array(
     'field_config' => array(
       'active' => '1',
@@ -160,6 +162,7 @@ function ash_slideshow_field_default_fields() {
       'field_name' => 'field_slide_link',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(

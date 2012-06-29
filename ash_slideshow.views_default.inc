@@ -42,19 +42,20 @@ function ash_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
-    'counter' => 0,
     'field_slide_link' => 0,
-    'field_slideshow_image' => 0,
+    'field_slide_image' => 0,
+    'counter' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['enable'] = 1;
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['weight'] = '2';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
     'counter' => 'counter',
     'field_slide_link' => 0,
-    'field_slideshow_image' => 0,
+    'field_slide_image' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
@@ -128,6 +129,31 @@ function ash_slideshow_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_slide_image']['field_api_classes'] = 0;
+  /* Field: Global: View result counter */
+  $handler->display->display_options['fields']['counter']['id'] = 'counter';
+  $handler->display->display_options['fields']['counter']['table'] = 'views';
+  $handler->display->display_options['fields']['counter']['field'] = 'counter';
+  $handler->display->display_options['fields']['counter']['label'] = '';
+  $handler->display->display_options['fields']['counter']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['counter']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['counter']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['counter']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['counter']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['counter']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['counter']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['counter']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['counter']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
