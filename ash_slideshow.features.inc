@@ -45,8 +45,8 @@ function ash_slideshow_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '940',
-          'height' => '400',
+          'width' => '1170',
+          'height' => '500',
         ),
         'weight' => '1',
       ),

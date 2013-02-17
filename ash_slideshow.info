@@ -20,7 +20,6 @@ features[ctools][] = linkit:linkit_profiles:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
-features[field][] = comment-comment_node_slideshow-comment_body
 features[field][] = node-slideshow-field_slide_image
 features[field][] = node-slideshow-field_slide_link
 features[image][] = slideshow_image
